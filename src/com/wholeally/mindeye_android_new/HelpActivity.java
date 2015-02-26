@@ -20,7 +20,7 @@ import com.shilian.mindeye.android.R;
  * 2015-2-5 下午4:07:30  
  */
 public class HelpActivity extends BaseActivity implements OnClickListener{
-	
+	 
 	private Context context;
 	private TextView textView_common_titlebar_titles;//标题
 	private ImageView imageView_common_titlebar_rights;//导航右边图片
