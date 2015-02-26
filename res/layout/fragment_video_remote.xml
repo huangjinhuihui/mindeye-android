@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_fragment_video_remote_novideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageView_fragment_video_remote_novideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_tab_video_novideo"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView_fragment_video_remote_novideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_fragment_video_remote_novideo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="@string/tab_video_activity_novideo"
+            android:textSize="18sp"
+            android:textColor="@color/gray_common_tab_text"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listView_fragment_video_remote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" 
+            android:divider="@color/gray_tab_main_activity_bg"
+            android:dividerHeight="1dp">
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

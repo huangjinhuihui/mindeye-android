@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_more_item" >
+
+    <TextView
+        android:id="@+id/text_FragmentMessageEvent_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="2014-12-30 14:55:01" />
+
+    <View
+        android:id="@+id/view_FragmentMessageEvent_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/text_FragmentMessageEvent_time"
+        android:layout_marginTop="2dp"
+        android:background="@color/gray_line" />
+
+    <RelativeLayout
+        android:id="@+id/relative_FragmentMessageEvent_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_FragmentMessageEvent_line" >
+
+        <RelativeLayout
+            android:id="@+id/relative_FragmentMessageEvent_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_main_activity_bg" >
+
+            <ImageView
+                android:id="@+id/image_FragmentMessageEvent_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="2dp"
+                android:src="@drawable/icon_listview_channel_tab_video_activity" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/relative_FragmentMessageEvent_image"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/text_FragmentMessageEvent_messagecontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="消息内容"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text_FragmentMessageEvent_tagread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="未读"
+                    android:textColor="@color/gray_one"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_FragmentMessageEvent_messagesource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_message_event_messagesource"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text_FragmentMessageEvent_messagesourcejson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IPC(HW001)"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_FragmentMessageEvent_messagetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_message_event_messagetype"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text_FragmentMessageEvent_messagetypejson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="移动侦测报警"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_FragmentMessageEvent_linetwo"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/relative_FragmentMessageEvent_message"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_FragmentMessageEvent_video"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_FragmentMessageEvent_linetwo"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/relative_FragmentMessageEvent_messagevideo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_more_item"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/checkbox_uncheck_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/fragment_message_event_messagevideo"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/gray_line" />
+
+        <RelativeLayout
+            android:id="@+id/relative_FragmentMessageEvent_scenevideo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_more_item"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/checkbox_uncheck_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/fragment_message_event_scenevideo"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_FragmentMessageEvent_linethree"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/linear_FragmentMessageEvent_video"
+        android:background="@color/gray_line" />
+    
+    <View 
+        android:layout_below="@+id/view_FragmentMessageEvent_linethree"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_two"/>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/layout_common_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue_common" >
+
+        <ImageView
+            android:id="@+id/imageView_common_titlebar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="goBack"
+            android:src="@drawable/selector_title_bar_back" />
+        <!-- 
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView_common_titlebar_left"
+            android:gravity="center_vertical"
+            android:text="@string/comment_back"
+            android:textSize="18sp"
+            android:textColor="@color/white" /> -->
+        
+         <TextView
+            android:id="@+id/textView_common_titlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView_common_titlebar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:visibility="gone"
+            android:src="@drawable/selector_title_bar_refresh" />
+        
+        <ImageView
+            android:id="@+id/imageView_common_titlebar_rightadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:visibility="gone"
+            android:src="@drawable/selector_title_bar_add" />
+        
+        <TextView 
+            android:id="@+id/text_common_titlebar_textadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="@string/manual_add_device_activity_add"
+            android:visibility="gone"/>
+        
+        <TextView 
+            android:id="@+id/text_common_titlebar_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="@string/register_activity_verification"
+            android:visibility="gone"/>
+        
+        <TextView 
+            android:id="@+id/text_common_titlebar_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="@string/register_activity_agree"
+            android:visibility="gone"/>
+        
+        <TextView 
+            android:id="@+id/text_common_titlebar_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="@string/register_activity_agree_finish"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,466 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoControlActivity" >
+    
+    <include android:id="@+id/titlebar_VideoControlActivity"
+        layout="@layout/common_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titlebar_VideoControlActivity"
+        android:orientation="vertical"
+        android:background="@color/black" >
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper_VideoControlActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY" >
+
+
+        </ViewFlipper>
+        
+        <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp" >
+
+	        <TextView
+	            android:id="@+id/textView_VideoControlActivity_flow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:text="0.0 KB/s （高清）"
+	            android:textColor="#3DB351"
+	            android:textSize="12sp" />
+
+	        <ImageView
+	            android:id="@+id/imageView_VideoControlActivity_flow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="10dp"
+	            android:layout_toLeftOf="@+id/textView_VideoControlActivity_flow"
+	            android:src="@drawable/icon_videoctrl_flow" />
+	
+	    </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/layout_video_control_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <!-- 菜单布局 -->
+            <LinearLayout
+                android:id="@+id/layout_video_control_menu"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageView_VideoControlActivity_resolution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_videoctrl_menu_resolution_normal"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageView_VideoControlActivity_flip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_videoctrl_menu_flip_normal"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageView_VideoControlActivity_yuntai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_videoctrl_menu_yuntai_normal"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageView_VideoControlActivity_recordVideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_videoctrl_menu_recordvideo_normal"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageView_VideoControlActivity_playback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_videoctrl_menu_playback_normal"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageView_VideoControlActivity_screenshot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_videoctrl_menu_screenshot_normal"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageView_VideoControlActivity_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_videoctrl_menu_photo_normal"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageView_VideoControlActivity_deployProtection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_videoctrl_menu_bufang_normal"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageView_VideoControlActivity_talk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_videoctrl_menu_talk_normal"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageView_VideoControlActivity_voice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_videoctrl_menu_voice_normal"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 对讲布局 -->
+            <LinearLayout
+                android:id="@+id/layout_video_control_talk"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/imageView_VideoControlActivity_talk_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_talk_close"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/imageView_VideoControlActivity_talk_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/icon_talk_initial"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/textView_VideoControlActivity_talk_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab_video_activity_talk_hint"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:paddingBottom="10dp" />
+
+            </LinearLayout>
+
+            <!-- 录像布局 -->
+            <LinearLayout
+                android:id="@+id/layout_video_control_recordvideo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" 
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imageView_video_control_recordvideo_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_talk_close"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView_video_control_recordvideo_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="00:00:00"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginRight="10dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_video_control_recordvideo_redcircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/textView_video_control_recordvideo_time"
+                        android:src="@drawable/icon_recordvideo_redcircle" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imageView_video_control_recordvideo_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selector_recordvideo_start"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_video_control_yuntai"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:background="@color/gray_yuntai_reset_normal" 
+                android:visibility="gone">
+                
+                <ImageView
+	                android:id="@+id/imageView_video_control_yuntai_close"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:src="@drawable/icon_talk_close"
+	                android:padding="5dp" />
+                
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:orientation="horizontal">
+	
+	                <com.wholeally.mindeye_android_new.custom.view.PieButtonLayout
+	                    android:layout_width="120dp"
+		            	android:layout_height="120dp"
+		            	android:layout_gravity="center"
+		            	android:background="@drawable/bg_yuntai"
+		            	android:layout_marginLeft="20dp"
+		            	android:layout_marginRight="20dp"
+		            	android:layout_marginTop="10dp"
+		            	android:layout_marginBottom="10dp" >
+	                </com.wholeally.mindeye_android_new.custom.view.PieButtonLayout>
+	
+	                <LinearLayout
+	                    android:layout_width="0dp"
+	                    android:layout_height="match_parent"
+	                    android:orientation="vertical"
+	                    android:layout_weight="1"
+	                    android:layout_gravity="center" >
+
+	                    <RelativeLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:layout_weight="1" >
+
+	                        <TextView
+	                            android:id="@+id/textView_video_control_yuntai_zoom"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:text="@string/tab_video_activity_yuntai_zoom"
+	                            android:textSize="15sp"
+	                            android:textColor="#FEFEFE"
+	                            android:layout_centerVertical="true" />
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:layout_centerVertical="true"
+	                            android:layout_toRightOf="@+id/textView_video_control_yuntai_zoom"
+	                            android:layout_marginLeft="5dp"
+	                            android:layout_marginRight="10dp"
+	                            android:background="@color/gray_yuntai_button_normal" >
+
+	                            <ImageView
+	                                android:id="@+id/imageView_video_control_yuntai_zoom_reduce"
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:src="@drawable/icon_yuntai_left"
+	                                android:layout_gravity="center"
+	                                android:padding="10dp" />
+
+	                            <ProgressBar
+	                                android:id="@+id/progressBar_video_control_yuntai_zoom"
+	                                style="?android:attr/progressBarStyleHorizontal"
+	                                android:layout_width="0dp"
+	                                android:layout_height="3dp"
+	                                android:layout_weight="1"
+	                                android:layout_gravity="center"
+	                                android:progress="50"
+	                                android:progressDrawable="@drawable/progressbar_yuntai" />"
+
+	                            <ImageView
+	                                android:id="@+id/imageView_video_control_yuntai_zoom_add"
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:src="@drawable/icon_yuntai_right"
+	                                android:layout_gravity="center"
+	                                android:padding="10dp" />
+	                            
+	                        </LinearLayout>
+
+	                    </RelativeLayout>
+	                    
+	                    <RelativeLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginTop="10dp"
+	                        android:layout_marginBottom="10dp"
+	                        android:layout_weight="1" >
+
+	                        <TextView
+	                            android:id="@+id/textView_video_control_yuntai_aperture"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:text="@string/tab_video_activity_yuntai_aperture"
+	                            android:textSize="15sp"
+	                            android:textColor="#FEFEFE"
+	                            android:layout_centerVertical="true" />
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:layout_centerVertical="true"
+	                            android:layout_toRightOf="@+id/textView_video_control_yuntai_aperture"
+	                            android:layout_marginLeft="5dp"
+	                            android:layout_marginRight="10dp"
+	                            android:background="@color/gray_yuntai_button_normal" >
+
+	                            <ImageView
+	                                android:id="@+id/imageView_video_control_yuntai_aperture_reduce"
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:src="@drawable/icon_yuntai_left"
+	                                android:layout_gravity="center"
+	                                android:padding="10dp" />
+
+	                            <ProgressBar
+	                                android:id="@+id/progressBar_video_control_yuntai_aperture"
+	                                style="?android:attr/progressBarStyleHorizontal"
+	                                android:layout_width="0dp"
+	                                android:layout_height="3dp"
+	                                android:layout_weight="1"
+	                                android:layout_gravity="center"
+	                                android:progress="50"
+	                                android:progressDrawable="@drawable/progressbar_yuntai" />
+
+	                            <ImageView
+	                                android:id="@+id/imageView_video_control_yuntai_aperture_add"
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:src="@drawable/icon_yuntai_right"
+	                                android:layout_gravity="center"
+	                                android:padding="10dp" />
+	                            
+	                        </LinearLayout>
+
+	                    </RelativeLayout>
+	                    
+	                    <RelativeLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:layout_weight="1" >
+
+	                        <TextView
+	                            android:id="@+id/textView_video_control_yuntai_focus"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:text="@string/tab_video_activity_yuntai_focus"
+	                            android:textSize="15sp"
+	                            android:textColor="#FEFEFE"
+	                            android:layout_centerVertical="true" />
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:layout_centerVertical="true"
+	                            android:layout_toRightOf="@+id/textView_video_control_yuntai_focus"
+	                            android:layout_marginLeft="5dp"
+	                            android:layout_marginRight="10dp"
+	                            android:background="@color/gray_yuntai_button_normal" >
+
+	                            <ImageView
+	                                android:id="@+id/imageView_video_control_yuntai_focus_reduce"
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:src="@drawable/icon_yuntai_left"
+	                                android:layout_gravity="center"
+	                                android:padding="10dp" />
+
+	                            <ProgressBar
+	                                android:id="@+id/progressBar_video_control_yuntai_focus"
+	                                style="?android:attr/progressBarStyleHorizontal"
+	                                android:layout_width="0dp"
+	                                android:layout_height="3dp"
+	                                android:layout_weight="1"
+	                                android:layout_gravity="center"
+	                                android:progress="50"
+	                                android:progressDrawable="@drawable/progressbar_yuntai" />
+
+	                            <ImageView
+	                                android:id="@+id/imageView_video_control_yuntai_focus_add"
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:src="@drawable/icon_yuntai_right"
+	                                android:layout_gravity="center"
+	                                android:padding="10dp" />
+	                            
+	                        </LinearLayout>
+
+	                    </RelativeLayout>
+
+	                </LinearLayout>
+	
+	            </LinearLayout>
+	            
+            </LinearLayout>
+            
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+</RelativeLayout>

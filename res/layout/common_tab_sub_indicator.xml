@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/textView_common_tab_sub_indicator"
+        android:layout_width="wrap_content"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:text="TextView"
+        android:textColor="@color/gray_common_tab_text"
+        android:gravity="center" />

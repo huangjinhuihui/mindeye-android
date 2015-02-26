@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">思维眼</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- 通用 -->
+    <string name="common_cancel">取消</string>
+    <string name="common_confirm">确定</string>
+
+    <!-- 视频页 -->
+    <string name="tab_video_activity_titlebar_title">视频</string>
+    <string name="tab_video_activity_novideo">暂无视频,请先添加设备</string>
+    <string name="tab_video_activity_talk_hint">按住对讲，松开结束</string>
+    <string name="tab_video_activity_resolution_title">画质选择</string>
+    <string name="tab_video_activity_resolution_HD">高清画质</string>
+    <string name="tab_video_activity_resolution_SD">标清画质</string>
+    <string name="tab_video_activity_resolution_LD">流畅画质</string>
+    <string name="tab_video_activity_playback_title">回放选择</string>
+    <string name="tab_video_activity_playback_local">本地回放</string>
+    <string name="tab_video_activity_playback_remote">远程回放</string>
+    <string name="tab_video_activity_screenshot_title">自定义截图名称</string>
+    <string name="tab_video_activity_screenshot_subtitle">选择跳过，将按时间存为默认名称</string>
+    <string name="tab_video_activity_screenshot_ignore">跳过</string>
+    <string name="tab_video_activity_screenshot_confirm">确定</string>
+    <string name="tab_video_activity_screenshot_hint">请输入自定义名称</string>
+    <string name="tab_video_activity_recordvideo_title">自定义录像名称</string>
+    <string name="tab_video_activity_yuntai_zoom">变倍</string>
+    <string name="tab_video_activity_yuntai_aperture">光圈</string>
+    <string name="tab_video_activity_yuntai_focus">焦距</string>
+    <string name="tab_video_activity_flip_title">翻转选择</string>
+    <string name="tab_video_activity_flip_horizontal">水平翻转</string>
+    <string name="tab_video_activity_flip_vertical">垂直翻转</string>
+
+    <!-- 消息页 -->
+    <string name="tab_message_activity_titlebar_title">消息</string>
+
+    <!-- 设备页 -->
+    <string name="tab_device_activity_titlebar_title">设备</string>
+    <string name="tab_device_activity_nodevice">暂无设备,请添加新设备</string>
+
+    <!-- 更多页 -->
+    <string name="tab_more_activity_titlebar_title">更多</string>
+    <string name="loading_activity_company_info">拾联科技 ©2014.Wholeally</string>
+    <string name="welcome_activity_away_tiyan">立即体验</string>
+    <string name="comment_back">返回</string>
+    <string name="login_activity_username">用户名</string>
+    <string name="login_activity_password">密码</string>
+    <string name="login_activity_login">登录</string>
+    <string name="login_activity_text_no_account">还没有账号,</string>
+    <string name="login_activity_please_register">请注册</string>
+    <string name="login_activity_zhibo_qudao">直播通道</string>
+    <string name="login_activity_global_show">全球示范点</string>
+    <string name="register_activity_register">注册</string>
+    <string name="register_activity_inputcountry">请确认你的国家和地区并输入手机号</string>
+    <string name="register_activity_area">国家和地区</string>
+    <string name="register_activity_verification_code">验证码</string>
+    <string name="register_activity_inputverifcode">请填写验证码</string>
+    <string name="register_activity_verification">验证</string>
+    <string name="register_activity_quhao">+86</string>
+    <string name="register_activity_get_code">获取验证码</string>
+    <string name="register_activity_input_telephone">请填写手机号</string>
+    <string name="register_activity_already_read">我已阅读并同意</string>
+    <string name="register_activity_read_xieyi">《注册服务协议》</string>
+    <string name="register_activity_already_reads">我已阅读并同意注册服务协议</string>
+    <string name="register_activity_account">账号</string>
+    <string name="register_activity_nick">昵称</string>
+    <string name="register_activity_tiaojian">5&#8211;20位数字、英文或下划线</string>
+    <string name="register_activity_input_account">请输入账号</string>
+    <string name="register_activity_password">密码</string>
+    <string name="register_activity_password_tiaojian">请输入6&#8211;16位密码</string>
+    <string name="register_activity_input_password">请输入密码</string>
+    <string name="register_activity_confirm_password">确认密码</string>
+    <string name="register_activity_again_password">请确认密码</string>
+    <string name="register_activity_device_name">设备名称</string>
+    <string name="register_activity_input_device_name">请输入设备名称</string>
+    <string name="register_activity_telephone">手机号码</string>
+    <string name="register_activity_input_info">请填写以下信息完成你的注册</string>
+    <string name="register_activity_register_xieyi">用户注册协议</string>
+    <string name="register_activity_agree">同意</string>
+    <string name="register_activity_agree_finish">完成</string>
+    <string name="register_activity_text">思维眼软件注册及使用协议</string>
+    <string name="register_activity_content">欢迎你使用思维眼软件及服务!\n拾联(厦门)信息科技有限公司专注于VSSAAS远程视频监控服务云平台的研发,平台采用跨区域、大集中、分层级的架构体系,打造中断层面、网络层面、平台层面、应用层面交互层面的深度技术和业务 融合。同时,具备了集成各种智能分析工具及"高视频压缩技术、低流量信息传输"的绝对优势,并通过与传统及移动互联网应用的融合,为客户提供全方位的"远程视频科技"为核心的信息化应用管理解决方案。</string>
+    <string name="more_activity_account_manager">账号管理</string>
+    <string name="more_activity_wifi_setting">wifi设置</string>
+    <string name="more_activity_data_tongji">数据流量统计</string>
+    <string name="more_activity_help">帮助</string>
+    <string name="more_activity_feedback">意见反馈</string>
+    <string name="more_activity_about_we">关于我们</string>
+    <string name="more_activity_update">检查更新</string>
+    <string name="more_activity_exit">退出</string>
+    <string name="account_manager_activity_head">头像</string>
+    <string name="account_manager_activity_accountype">账号类型</string>
+    <string name="account_manager_activity_name">真实姓名</string>
+    <string name="account_manager_activity_mail">邮箱</string>
+    <string name="account_manager_activity_phone">手机号</string>
+    <string name="account_manager_activity_updatepassword">修改密码</string>
+    <string name="update_password_activity_old">旧密码</string>
+    <string name="update_password_activity_new">新密码</string>
+    <string name="update_password_activity_inputold">请输入旧密码</string>
+    <string name="update_password_activity_inputnew">请输入新密码</string>
+    <string name="update_password_activity_againpassword">请再次输入密码</string>
+    <string name="update_password_activity_confirm">确认</string>
+    <string name="nickname_mail_activity_updatenick">修改昵称</string>
+    <string name="nickname_mail_activity_nickcondition">请输入1&#8211;20位数字、字母或汉字</string>
+    <string name="nickname_mail_activity_updatename">修改姓名</string>
+    <string name="nickname_mail_activity_namecondition">请输入1&#8211;10位字母或汉字</string>
+    <string name="nickname_mail_activity_updatemail">修改邮箱</string>
+    <string name="nickname_mail_activity_mailcondition">请输入1&#8211;50位邮箱地址</string>
+
+    <string name="wifi_activity_title">WIFI设置</string>
+    <string name="wifi_activity_net">2G/3G/4G</string>
+    <string name="wifi_activity_daytraffic">今日流量</string>
+    <string name="wifi_activity_monthtraffic">本月流量</string>
+    <string name="wifi_activity_historycounttraffic">历史总流量</string>
+    <string name="wifi_activity_cleardata">清空数据</string>
+    <string name="wifi_activity_trafficount">流量统计</string>
+    <string name="wifi_activity_activation">激活</string>
+    <string name="wifi_activity_noactivation">未激活</string>
+    <string name="wifi_activity_netlink">WIFI网络连接</string>
+    <string name="wifi_activity_netname">网络名称</string>
+    <string name="wifi_activity_wifilink">连接</string>
+    <string name="wifi_activity_wifilist">点击图标显示wifi列表</string>
+    <string name="wifi_activity_wifipass">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;请输入密码</string>
+    
+    <string name="help_activity_help">帮助</string>
+    <string name="help_activity_deviceuse">设备使用帮助</string>
+    <string name="help_activity_appuse">应用使用帮助</string>
+    
+    <string name="feedback_activity_submit">提交</string>
+    <string name="feedback_activity_feedback">意见反馈</string>
+    <string name="feedback_activity_edit">请给出您的意见</string>
+    
+    <!-- 一些通用的显示信息 -->
+    <string name="toast_channel_offline">当前通道不在线，无法观看</string>
+    <string name="toast_not_authority_yuntai">当前账号无云台操作权限</string>
+    <string name="toast_not_authority_talk">当前账号无对讲权限</string>
+    <string name="title_activity_video_control">VideoControlActivity</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="about_we_activity_contents">&#160;&#160;&#160;&#160;&#160;&#160;拾联(厦门)信息科技有限公司专注于VSSAAS远程视频监控服务云平台的研发,平台采用跨区域、大集中、分层级的架构体系,打造中断层面、网络层面、平台层面、应用层面交互层面的深度技术和业务融合。同时,具备了集成各种智能分析工具及"高视频压缩技术、低流量信息传输"的绝对优势,并通过与传统及移动互联网应用的融合,为客户提供全方位的"远程视频科技"为核心的信息化应用管理解决方案。</string>
+   <string name="about_we_activity_text">客服电话:</string>
+   <string name="about_we_activity_phone">4001&#8211;566&#8211;177</string>
+   <string name="about_we_activity_qq">QQ:2720947253&#160;&#160;&#160;&#160;2209961552</string>
+   <string name="about_we_activity_webtext">公司网址:</string>
+   <string name="about_we_activity_weblink">http://www.wholeally.com</string>
+   <string name="about_we_activity_address">公司地址:福建省厦门市思明区软件园2期观日路26号之四,504之二</string>
+   
+   <string name="tab_device_activity_online">在线</string>
+   <string name="tab_device_activity_offline">离线</string>
+
+   <string name="tab_device_detail_activity_devicedetail">设备详情</string>
+   <string name="tab_device_detail_activity_imageset">图像设置</string>
+   <string name="tab_device_detail_activity_videoset">录像设置</string>
+   <string name="tab_device_detail_activity_voiceset">声音设置</string>
+   <string name="tab_device_detail_activity_wifinet">WIFI网络</string>
+   <string name="tab_device_detail_activity_savestatus">存储状态</string>
+   <string name="tab_device_detail_activity_deviceversion">设备版本</string>
+   <string name="tab_device_detail_activity_onlinetime">在线时长</string>
+   <string name="tab_device_detail_activity_offlinenotice">下线通知</string>
+   <string name="tab_device_detail_activity_systemset">系统设置</string>
+   
+   <string name="update_device_name_activity_name">修改设备名称</string>
+   <string name="update_device_name_activity_newname">请填写新的设备名称</string>
+   <string name="update_device_name_activity_tiaojian">1&#8211;8位数字、英文或汉字</string>
+   
+   <string name="image_set_activity_title">图像设置</string>
+   <string name="image_set_activity_timestemp">是否显示时间戳</string>
+   <string name="image_set_activity_camername">是否显示摄像机名称</string>
+   <string name="image_set_activity_autolight">是否自动补光</string>
+   <string name="image_set_activity_policeinfo">开启后,当物体挡住镜头时,将有报警信息提示</string>
+   
+   <string name="video_set_activity_videoset">录像设置</string>
+   <string name="video_set_activity_videoway">录像方式</string>
+   <string name="video_set_activity_manualvideo">手动录像</string>
+   <string name="video_set_activity_entirevideo">全程录像</string>
+   <string name="video_set_activity_package_interval">打包间隔</string>
+   <string name="video_set_activity_storage_policy">存储策略</string>
+   <string name="video_set_activity_ifcover">是否覆盖</string>
+   
+   <string name="voice_set_activity_voiceset">声音设置</string>
+   <string name="voice_set_activity_collectvoice">采集声音</string>
+   <string name="voice_set_activity_playvoice">播放声音</string>
+   
+   <string name="wifi_net_activity_netinfo">当前WIFI网络信息</string>
+   <string name="wifi_net_activity_net">网络</string>
+   <string name="wifi_net_activity_inputnetname">请输入网络名称</string>
+   <string name="wifi_net_activity_wifipass">请输入密码</string>
+   
+   <string name="storage_status_activity_storage">存储状态</string>
+   <string name="storage_status_activity_storage_cloud">云存储(暂未启用)</string>
+   <string name="storage_status_activity_nostorage">未存储</string>
+   <string name="storage_status_activity_storagecard">存储卡</string>
+   
+   <string name="system_set_activity_systemset">系统设置</string>
+   <string name="system_set_activity_restoreset">恢复出厂设置</string>
+   <string name="system_set_activity_restartdevice">重启设备</string>
+   
+   <string name="dialog_version_update">版本更新</string>
+   <string name="dialog_version_update_next">以后再说</string>
+   <string name="dialog_version_update_awayupdate">立即更新</string>
+   <string name="add_device_way_dialog_way">添加方式</string>
+   <string name="add_device_way_dialog_saomiao">扫描添加</string>
+   <string name="add_device_way_dialog_manual">手动添加</string>
+   <string name="add_device_way_dialog_cancel">取消</string>
+   <string name="add_device_way_dialog_sure">确定</string>
+   <string name="update_head_dialog_headname">修改头像</string>
+   <string name="update_head_dialog_takephoto">拍照</string>
+   <string name="update_head_dialog_photochoose">从相册中选择</string>
+   <string name="update_head_dialog_localphoto">本地相册</string>
+   <string name="update_head_dialog_photoselect">相册选择</string>
+   <string name="update_head_dialog_sysphoto">系统相册</string>
+   <string name="text_error_info_dialog">输入信息有误</string>
+   <string name="text_error_info_dialogs">请重新填写您的账号信息</string>
+   
+   <string name="manual_add_device_activity_title">添加设备</string>
+   <string name="manual_add_device_activity_longitude">经度</string>
+   <string name="manual_add_device_activity_latitude">纬度</string>
+   <string name="manual_add_device_activity_add">添加</string>
+   <string name="manual_add_device_activity_deviceid">设备ID</string>
+   <string name="manual_add_device_activity_inputid">请输入设备ID</string>
+   
+   <string name="storage_info_activity_titlename">存储卡信息</string>
+   <string name="storage_info_activity_storagesize">存储卡容量</string>
+   <string name="storage_info_activity_warning">存储预警</string>
+   <string name="storage_info_activity_warnconcondition">存储预警指当使用量到达指定的范围,用户可收到一条预警信息</string>
+   <string name="storage_info_activity_format">格式化</string>
+   <string name="storage_info_activity_lookcontent">查看内容</string>
+   <string name="storage_info_activity_monitore_tag">TF></string>
+   
+   <string name="fragment_message_event_alreadyread">全部标记为已读</string>
+   <string name="fragment_message_event_messagesource">消息来源:</string>
+   <string name="fragment_message_event_messagetype">消息类型:</string>
+   <string name="fragment_message_event_messagevideo">消息录像</string>
+   <string name="fragment_message_event_scenevideo">现场视频</string>
+</resources>

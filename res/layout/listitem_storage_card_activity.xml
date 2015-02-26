@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_more_item" >
+
+    <RelativeLayout
+        android:id="@+id/relative_listitem_storage_card_activity_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_main_activity_bg" >
+
+        <ImageView
+            android:id="@+id/image_listitem_storage_card_activity_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="2dp"
+            android:src="@drawable/icon_listview_channel_tab_video_activity" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/relative_listitem_storage_card_activity_image"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_listitem_storage_card_activity_storagename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="软件园二期监控"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_listitem_storage_card_activity_storagetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-02-15 17:11:53"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/check_StorageCardActivity_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:button="@drawable/selector_point_checkbox_file" />
+
+</RelativeLayout>

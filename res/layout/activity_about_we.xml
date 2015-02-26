@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fill_parent_vertical"
+    android:background="@color/gray_two" >
+
+    <include layout="@layout/common_title_bar" />
+
+    <ScrollView style="@style/fill_parent" >
+
+        <LinearLayout
+            style="@style/fill_parent_vertical"
+            android:layout_margin="15dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_we_activity_contents"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/wrap_content"
+                    android:text="@string/about_we_activity_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text_AboutWeActivity_call"
+                    style="@style/wrap_content"
+                    android:text="@string/about_we_activity_phone"
+                    android:textColor="@color/blue_one"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_we_activity_qq"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/wrap_content"
+                    android:text="@string/about_we_activity_webtext"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text_AboutWeActivity_weblink"
+                    style="@style/wrap_content"
+                    android:text="@string/about_we_activity_weblink"
+                    android:textColor="@color/blue_one"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_we_activity_address"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

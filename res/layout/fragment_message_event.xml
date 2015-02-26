@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fill_parent_vertical"
+    android:background="@color/gray_two" >
+
+    <RelativeLayout
+        android:id="@+id/relative_FragmentMessageEvent_read"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_black"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView_fragment_message_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/fragment_message_event_alreadyread"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/relative_FragmentMessageEvent_read" >
+
+        <ListView
+            android:id="@+id/listView_fragment_message_event"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:divider="@color/gray_line"
+            android:dividerHeight="0.5dp"
+            android:visibility="visible" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

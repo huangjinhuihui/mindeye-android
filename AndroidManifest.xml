@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shilian.mindeye.android"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <!-- package="com.wholeally.mindeye_android_new" -->
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <!-- android 多种分辨率支持，此设置也是能够在代码中正确获取机器物理尺寸的重要配置 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.wholeally.mindeye_android_new.app.MindeyeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 启动页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.LoadingActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 欢迎导航页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.WelcomeActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 登录页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.LoginActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 注册页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.RegisterActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 注册协议页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.RegisterAgreeMentActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 注册完成页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.RegisterFinishActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- Tab框架页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.MainActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 视频Tab页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.TabVideoActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 消息Tab页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.TabMessageActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 设备Tab页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.TabDeviceActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 更多页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.TabMoreActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 账号管理页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.AccountManagerActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 修改密码页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.UpdatePasswordActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 昵称、真实姓名和邮箱修改页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.NickNameMailActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 视频控制页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.VideoControlActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        
+        <!-- WIFI设置页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.WifiActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- WIFI设置子页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.WifiItemSetActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 数据流量统计页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.DataTrafficActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 帮助页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.HelpActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 设备使用和应用使用帮助页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.WebViewDeviceActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 意见反馈页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.FeedBackActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 关于我们页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.AboutWeActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 设备详情页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.TabDeviceDetailActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 修改设备名称页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.UpdateDeviceNameActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 图像设置页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.ImageSetActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 录像设置页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.VideoSetActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 声音设置页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.VoiceSetActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- WIFI网络页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.WifiNetActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 存储状态页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.StorageStatusActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 系统设置页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.SystemSetActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 手动添加设备页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.ManualAddDeviceActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <!-- 扫描添加设备页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.CaptureActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 存储卡信息页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.StorageInfoActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 查看内容存储卡页面 -->
+        <activity
+            android:name="com.wholeally.mindeye_android_new.StorageCardActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+    <!-- 权限设置 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 使用摄像头需要加入相应的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 使用GPS的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 按Back键时实现按Home键时隐藏程序的效果 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+</manifest>
