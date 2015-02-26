@@ -17,7 +17,7 @@ import com.shilian.mindeye.android.R;
 /**
  * @author huangjh
  *
- * 2015-2-5 下午4:07:30
+ * 2015-2-5 下午4:07:30  
  */
 public class HelpActivity extends BaseActivity implements OnClickListener{
 	
